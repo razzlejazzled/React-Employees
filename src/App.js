@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import API from "./utils/api"
 import './App.css';
 import Table from './components/table'
-
+import Search from "./components/Search"
 
 
 class App extends Component {
@@ -12,12 +12,12 @@ class App extends Component {
   componentDidMount() {
     console.log("hi!")
     API.getUsers()
-    .then(res =>this.setState({ results: res.data.results}))
-    .catch(err => console.log(err))
+      .then(res => this.setState({ results: res.data.results }))
+      .catch(err => console.log(err))
   };
 
   handleInputChange = (event) => {
-    const { name, value} = event.target;
+    const { name, value } = event.target;
     this.setState({
       [name]: value,
     });
@@ -25,9 +25,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Table
-       data={this.state.results}
-        />
+        <Search search={this.state.search}
+          handleInputChange={this.handleInputchange} />
+        <div className="container">
+          <div className="row">
+            <Table
+              data={this.state.results}
+            />
+          </div>
+        </div>
       </div>
     )
   }
