@@ -1,28 +1,17 @@
 import React from "react";
-
+import "../styles/table.css";
 
 function Table(props) {
-    return (<table className="table table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Image</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">City</th>
-                <th scope="col">Email</th>
-            </tr>
-        </thead>
-        <tbody>
-        {this.state.results.map(results => (
-            <tr>
-                <th scope="row"><img className="personImage" alt={props.name} src={props.image} /></th>
-                <td>{props.name}</td>
-                <td>{props.location}</td>
-                <td>{props.email}</td>
-            </tr>
-         ))}
-        </tbody>
-    </table>
+    // console.log(props)
+    return (
+        <>
+            <th scope="row"><img className="personImage" alt={props.name} src={props.img} /></th>
+            <td>{props.name}</td>
+            <td>{props.phone}</td>
+            <td>{props.email}</td>
+            <td>{props.dob}</td>
+        </>
     )
 }
-export default Table
+
+export default Table;
