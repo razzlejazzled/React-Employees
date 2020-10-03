@@ -15,6 +15,13 @@ class App extends Component {
     .then(res =>this.setState({ results: res.data.results}))
     .catch(err => console.log(err))
   };
+
+  handleInputChange = (event) => {
+    const { name, value} = event.target;
+    this.setState({
+      [name]: value,
+    });
+  }
   render() {
     return (
       <div>
