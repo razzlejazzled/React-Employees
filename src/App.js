@@ -67,7 +67,7 @@ class App extends Component {
                   <th scope="col">Name</th>
                   <th scope="col">Phone</th>
                   <th scope="col">Email</th>
-                  <th scope="col">DOB</th>
+                  <th scope="col">Date of Birth</th>
                   <th scope="location">Location</th>
                 </tr>
               </thead>
