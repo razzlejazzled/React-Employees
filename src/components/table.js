@@ -10,6 +10,8 @@ function Table(props) {
             <td>{props.phone}</td>
             <td>{props.email}</td>
             <td>{props.dob}</td>
+            <td>{props.location}</td>
+            
         </>
     )
 }

@@ -21,6 +21,8 @@ class App extends Component {
           email: employee.email,
           image: employee.picture.medium,
           dob: employee.dob.date,
+          location: employee.location.city
+          
         })),
       });
     });
@@ -66,6 +68,7 @@ class App extends Component {
                   <th scope="col">Phone</th>
                   <th scope="col">Email</th>
                   <th scope="col">DOB</th>
+                  <th scope="location">Location</th>
                 </tr>
               </thead>
               <tbody>
@@ -79,6 +82,7 @@ class App extends Component {
                         phone={employee.phone}
                         email={employee.email}
                         dob={employee.dob}
+                        location={employee.location}
                       />
                     </tr>
                   ))}
