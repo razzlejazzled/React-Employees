@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
-import Search from "./components/Search";
-import Table from "./components/Table";
-import "./app.css";
-import API from "./utils/API";
+import Header from "./components/header";
+import Search from "./components/search";
+import Table from "./components/table";
+import "./App.css";
+import API from "./utils/api";
 
 class App extends Component {
   state = {
