@@ -13,7 +13,7 @@ function Table(props) {
             </tr>
         </thead>
         <tbody>
-        {this.state.employees.map(employee => (
+        {this.state.results.map(results => (
             <tr>
                 <th scope="row"><img className="personImage" alt={props.name} src={props.image} /></th>
                 <td>{props.name}</td>
