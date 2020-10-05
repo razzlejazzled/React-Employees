@@ -14,7 +14,7 @@ This application has the following dependencies:
 * react-scripts
 
 ## Deployment
-If you are reading this, I have not yet been able to successfully deploy this site. Both the directions to deploy via Github pages, and netlify (reccomended by my instructor) are not working for me. Once I am able to successfully deploy, this text (line 17) will be replaced by a link to a deployable site. 
+[The site is deployed via Netlify](https://goofy-dijkstra-bd20f8.netlify.app)
 
 
   ![screenshot of application](./public/assets/Screenshot.png)
