@@ -13,6 +13,10 @@ This application has the following dependencies:
 * react-dom
 * react-scripts
 
+## Other Technologies
+* React.js
+
+
 ## Deployment
 [The site is deployed via Netlify](https://goofy-dijkstra-bd20f8.netlify.app)
 
